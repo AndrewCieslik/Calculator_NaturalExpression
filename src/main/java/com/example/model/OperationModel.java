@@ -7,17 +7,7 @@ public class OperationModel {
     private String b;
     private String operator;
     private String naturalExpression;
-
-    public String getWebResult() {
-        return webResult;
-    }
-
-    public void setWebResult(String webResult) {
-        this.webResult = webResult;
-    }
-
     private String webResult;
-
     private boolean nowSecondNumber;
 
     public OperationModel() {
@@ -79,5 +69,13 @@ public class OperationModel {
 
     public void setNaturalExpression(String naturalRecord) {
         this.naturalExpression = naturalRecord;
+    }
+
+    public String getWebResult() {
+        return webResult;
+    }
+
+    public void setWebResult(String webResult) {
+        this.webResult = webResult;
     }
 }
