@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body bgcolor="#009933">
+
+<div class="calculator">
+    <form action="#" th:action="@{/calculator}" th:object="${operationModel}" method="POST">
+
+        <input type="hidden" th:field="*{a}" class="calculator-input"/>
+        <input type="hidden" th:field="*{b}" class="calculator-input"/>
+        <input type="text" th:field="*{naturalExpression}" class="calculator-inputNatural"/>
+        <input type="text" th:field="*{webResult}" class="calculator-input"/>
+
+        <input type="hidden" th:field="*{nowSecondNumber}"/>
+        <input type="hidden" th:field="*{operator}"/>
+
+        <div class="button-grid">
+            <input type="submit" class="button operator" name="percentage" value="%"/>
+            <input type="submit" class="button operator" name="changeSign" value="+/-"/>
+            <input type="submit" class="button" name="clearSimple" value="C"/>
+            <input type="submit" class="button operator" name="divide" value="/"/>
+
+            <input type="submit" class="button" name="seven" value="7"/>
+            <input type="submit" class="button" name="eight" value="8"/>
+            <input type="submit" class="button" name="nine" value="9"/>
+            <input type="submit" class="button operator" name="multiply" value="x"/>
+
+            <input type="submit" class="button" name="four" value="4"/>
+            <input type="submit" class="button" name="five" value="5"/>
+            <input type="submit" class="button" name="six" value="6"/>
+            <input type="submit" class="button operator" name="subtract" value="-"/>
+
+            <input type="submit" class="button" name="one" value="1"/>
+            <input type="submit" class="button" name="two" value="2"/>
+            <input type="submit" class="button" name="three" value="3"/>
+            <input type="submit" class="button operator" name="add" value="+"/>
+
+            <input type="submit" class="button" name="zero" value="0"/>
+            <input type="submit" class="button" name="decimal" value=","/>
+            <input type="submit" class="button operator calculate" name="calculate" value="="/>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

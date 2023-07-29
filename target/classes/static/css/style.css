@@ -1,0 +1,103 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .calculator {
+            width: 220px;
+            height: 350px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .calculator-input {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 0px;
+            text-align: right;
+            font-size: 24px;
+            color: white;
+            background-color: black;
+            border: none;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        .calculator-inputNatural {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 0px;
+            text-align: right;
+            font-size: 16px;
+            color: gray;
+            background-color: black;
+            border: none;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 0px;
+        }
+
+        .button-grid .button {
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            padding: 0px;
+            border: 0px solid #ddd;
+            border-radius: 0;
+            cursor: pointer;
+            width: 55px;
+            height: 55px;
+        }
+
+        .button-grid .button:nth-child(1) { background: linear-gradient(to top, #F7F7F7, #F5F5F5); }
+        .button-grid .button:nth-child(2) { background: linear-gradient(to top, #F7F7F7, #F3F3F3); }
+        .button-grid .button:nth-child(3) { background: linear-gradient(to top, #FCFCFC, #F8F8F8); }
+        .button-grid .button:nth-child(4) { background: linear-gradient(to top, #9455EB, #884ED8); }
+        .button-grid .button:nth-child(5) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(6) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(7) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(8) { background: linear-gradient(to top, #9455EB, #884ED8); }
+        .button-grid .button:nth-child(9) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(10) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(11) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(12) { background: linear-gradient(to top, #9455EB, #884ED8); }
+        .button-grid .button:nth-child(13) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(14) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(15) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(16) { background: linear-gradient(to top, #9455EB, #884ED8); }
+        .button-grid .button:nth-child(17) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(18) { background: linear-gradient(to top, #FCFCFC, #F7F7F7); }
+        .button-grid .button:nth-child(19) { background: linear-gradient(to top, #F53292, #E62F89); }
+
+        .button-grid .button.operator.calculate {
+            grid-column: span 2;
+            width: 100%;
+        }
+
+        .button-grid .button.operator {
+            color: white;
+        }
+
+        .button-grid .button.calculate {
+            background-color: pink;
+        }
+
+        .button-grid .button.operator[name="percentage"],
+        .button-grid .button.operator[name="changeSign"] {
+              color: black;
+        }
+
+        .calculator-input:last-child {
+            margin-bottom: 0;
+        }
+}
